@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "share-point-hello-world-client-side-solution",
+    "id": "e2530a3a-26dd-48c5-85f9-6e6c30b357e8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SharePoint-hello-world description"
+      },
+      "longDescription": {
+        "default": "SharePoint-hello-world description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "share-point-hello-world Feature",
+        "description": "The feature that activates elements of the share-point-hello-world solution.",
+        "id": "168cdfab-41a6-4580-91c8-cac4b1ea8f82",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/share-point-hello-world.sppkg"
+  }
+}
