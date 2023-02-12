@@ -107,10 +107,30 @@ export default class SharePointWebPartWebPart extends BaseClientSideWebPart<ISha
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                })
-              ]
+              PropertyPaneTextField('description', {
+                label: 'Description'
+              }),
+              PropertyPaneTextField('test', {
+                label: 'Multi-line Text Field',
+                multiline: true
+              }),
+              PropertyPaneCheckbox('test1', {
+                text: 'Checkbox'
+              }),
+              PropertyPaneDropdown('test2', {
+                label: 'Dropdown',
+                options: [
+                  { key: '1', text: 'One' },
+                  { key: '2', text: 'Two' },
+                  { key: '3', text: 'Three' },
+                  { key: '4', text: 'Four' }
+                ]}),
+              PropertyPaneToggle('test3', {
+                label: 'Toggle',
+                onText: 'On',
+                offText: 'Off'
+              })
+            ]
             }
           ]
         }

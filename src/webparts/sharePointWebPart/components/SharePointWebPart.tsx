@@ -2,6 +2,13 @@ import * as React from 'react';
 import styles from './SharePointWebPart.module.scss';
 import { ISharePointWebPartProps } from './ISharePointWebPartProps';
 import { escape } from '@microsoft/sp-lodash-subset';
+import {
+  IPropertyPaneConfiguration,
+  PropertyPaneTextField,
+  PropertyPaneCheckbox,
+  PropertyPaneDropdown,
+  PropertyPaneToggle
+} from '@microsoft/sp-property-pane';
 
 export default class SharePointWebPart extends React.Component<ISharePointWebPartProps, {}> {
   public render(): React.ReactElement<ISharePointWebPartProps> {
